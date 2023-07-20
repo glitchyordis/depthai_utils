@@ -1,0 +1,88 @@
+# cam : 
+#   enable : True
+#   get_synced_frame : True
+#   get_disparity_frame : False
+#   get_oak_log : False
+# cobot :
+#   enabled : 
+#     - True
+#     - "phy" # "sim"
+# session :
+#   preload_gtab : False
+#   ENABLE_TEST_BUTTON : True
+
+#   obj_det_enabled: True
+#   ocr_enabled : True
+  
+#   debug : False
+#   gui_mode : True
+#   DEV_MODE : True
+
+#   ENABLE_CLOSEUP_REEXTRACT : False
+#   COBOT_MODE : True # this is inspection mode as inspection with manual boom arm and cobot may be different
+
+#   COBOT_SIM: False # todo this may be redundant, it was created to allow us to use boom arm if cobot was not enabled
+#   DEPLOY_MODE : False # if True, output_folder is changed to bppvdrive
+#   # SAVE_IMG_PATH : pathlib.Path.cwd()/"imgs"/"cobot_moves"
+
+#   AUTO_SAVE_IMG : False
+#   AUTO_STORE_RESULT : False
+# label_obj_det:
+#   # pt_file : "exp8best.pt"
+#   # yaml_file : "set3_purestretch832.yaml"
+#   # pt_file : "exp14best.pt"
+#   # yaml_file : "set3_purestretch_832_rot_ftgrill.yaml"
+#   pt_file : "exp15best.pt"
+#   yaml_file : "set3_stretch_832_2023jul18.yaml"
+#   inf_sz : !!int 832
+#   conf : !!float 0.45
+#   ignore : ["Lspo", "cb"]
+# doc :
+#   init_placement : "manual"  # manual : user draws bbox ; "preset" : user put at a specific position show in cv window
+
+
+
+
+# For collecting dataset
+cam : 
+  enable : True
+  get_synced_frame : False
+  get_disparity_frame : False
+  get_oak_log : False
+cobot :
+  enabled : 
+    - False
+    - "phy" # "sim"
+session :
+  preload_gtab : False
+  ENABLE_TEST_BUTTON : True
+
+  obj_det_enabled: False
+  ocr_enabled : False
+  
+  debug : False
+  gui_mode : True
+  DEV_MODE : True
+
+  ENABLE_CLOSEUP_REEXTRACT : False
+  COBOT_MODE : True # this is inspection mode as inspection with manual boom arm and cobot may be different
+
+  COBOT_SIM: False # todo this may be redundant, it was created to allow us to use boom arm if cobot was not enabled
+  DEPLOY_MODE : False # if True, output_folder is changed to bppvdrive
+  # SAVE_IMG_PATH : pathlib.Path.cwd()/"imgs"/"cobot_moves"
+
+  AUTO_SAVE_IMG : False
+  AUTO_STORE_RESULT : False
+label_obj_det:
+  # pt_file : "exp8best.pt"
+  # yaml_file : "set3_purestretch832.yaml"
+  # pt_file : "exp14best.pt"
+  # yaml_file : "set3_purestretch_832_rot_ftgrill.yaml"
+  pt_file : "exp15best.pt"
+  yaml_file : "set3_stretch_832_2023jul18.yaml"
+  inf_sz : !!int 832
+  conf : !!float 0.45
+  ignore : ["Lspo", "cb"]
+doc :
+  init_placement : "manual"  # manual : user draws bbox ; "preset" : user put at a specific position show in cv window
+
